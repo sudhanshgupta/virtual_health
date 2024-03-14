@@ -1,13 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class WebPage extends StatefulWidget {
+class LaunchScreen extends StatefulWidget {
 
   @override
-  _WebPageState createState() => _WebPageState();
+  _LaunchScreenState createState() => _LaunchScreenState();
 }
 
-class _WebPageState extends State<WebPage> {
+class _LaunchScreenState extends State<LaunchScreen> {
 
   @override
   Widget build(BuildContext context) {
@@ -15,4 +15,3 @@ class _WebPageState extends State<WebPage> {
     throw UnimplementedError();
   }
 }
-

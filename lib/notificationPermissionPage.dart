@@ -1,13 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class WebPage extends StatefulWidget {
+class NotificationPermission extends StatefulWidget {
 
   @override
-  _WebPageState createState() => _WebPageState();
+  _NotificationPermissionState createState() => _NotificationPermissionState();
 }
 
-class _WebPageState extends State<WebPage> {
+class _NotificationPermissionState extends State<NotificationPermission> {
 
   @override
   Widget build(BuildContext context) {
@@ -15,4 +15,3 @@ class _WebPageState extends State<WebPage> {
     throw UnimplementedError();
   }
 }
-

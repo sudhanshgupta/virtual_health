@@ -42,6 +42,9 @@ dependencies:
   webview_flutter: ^4.7.0
   permission_handler: ^11.3.0
   image_picker: ^1.0.7
+  connectivity: ^3.0.6
+  fluttertoast:
+  shared_preferences:
 
 dev_dependencies:
   flutter_test:

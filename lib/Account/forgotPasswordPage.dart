@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:virtual_health/Account/passwordInstruction.dart';
 
 class ForgotPassword extends StatefulWidget {
 
@@ -30,7 +31,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
             ),
             ElevatedButton(
               onPressed: () {
-                signUpAction();
+                submitAction();
               },
               child: Text('Submit'),
             ),
@@ -40,7 +41,9 @@ class _ForgotPasswordState extends State<ForgotPassword> {
     );
   }
 
-  void signUpAction() {
-
+  void submitAction() {
+    Navigator.push(context, MaterialPageRoute(builder: (context) {
+      return PasswordInstruction();
+    }));
   }
 }

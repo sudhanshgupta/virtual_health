@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:virtual_health/Account/signUpPage.dart';
+import 'package:virtual_health/Account/signUpDetails.dart';
 
 class RegistrationInstruction extends StatefulWidget {
 
@@ -39,7 +39,7 @@ class _RegistrationInstructionState extends State<RegistrationInstruction> {
 
   void signUpAction() {
     Navigator.push(context, MaterialPageRoute(builder: (context) {
-      return SignUp();
+      return SignUpDetails();
     }));
   }
 }

@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:virtual_health/Account/forgotPasswordPage.dart';
-import 'package:virtual_health/Account/registrationInstructionPage.dart';
+import 'package:virtual_health/Account/registrationInstruction.dart';
+import 'package:virtual_health/bioMatricPage.dart';
 import 'package:virtual_health/homePage.dart';
 
 class SignIn extends StatefulWidget {
@@ -58,7 +59,7 @@ class _SignInState extends State<SignIn> {
 
   void signInAction() {
     Navigator.push(context, MaterialPageRoute(builder: (context){
-      return Home();}));
+      return BioMatric();}));
   }
 
   void signUpAction() {

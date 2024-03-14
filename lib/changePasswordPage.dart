@@ -1,19 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Wellness extends StatefulWidget {
+class ChangePassword extends StatefulWidget {
 
   @override
-  _WellnessState createState() => _WellnessState();
+  _ChangePasswordState createState() => _ChangePasswordState();
 }
 
-class _WellnessState extends State<Wellness> {
+class _ChangePasswordState extends State<ChangePassword> {
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Wellness"),
+        title: Text("Change Password"),
       ),
     );
   }

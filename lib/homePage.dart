@@ -1,5 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:virtual_health/contactUsPage.dart';
+import 'package:virtual_health/medicalPage.dart';
+import 'package:virtual_health/mentalHealthPage.dart';
+import 'package:virtual_health/myCasesPage.dart';
+import 'package:virtual_health/settingPage.dart';
+import 'package:virtual_health/wellnessPage.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -15,7 +21,7 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
-          'WELCOME <NAME>',
+          'WELCOME RICKEY',
         ),
       ),
       drawer: Drawer(
@@ -76,8 +82,29 @@ class _HomeState extends State<Home> {
       body: Center(
         child: Column(
           children: [
-            SizedBox(
-              height: 50,
+            ElevatedButton(
+              onPressed: () {
+                medicalAction();
+              },
+              child: Text('Medical'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                mentalHealthAction();
+              },
+              child: Text('Mental Health'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                wellnessAction();
+              },
+              child: Text('Wellness'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                myCasesAction();
+              },
+              child: Text('My Cases'),
             ),
           ],
         ),
@@ -90,27 +117,39 @@ class _HomeState extends State<Home> {
   }
 
   void medicalAction() {
-    Navigator.pop(context);
+    Navigator.push(context, MaterialPageRoute(builder: (context) {
+      return Medical();
+    }));
   }
 
   void mentalHealthAction() {
-    Navigator.pop(context);
+    Navigator.push(context, MaterialPageRoute(builder: (context) {
+      return MentalHealth();
+    }));
   }
 
   void wellnessAction() {
-    Navigator.pop(context);
+    Navigator.push(context, MaterialPageRoute(builder: (context) {
+      return Wellness();
+    }));
   }
 
   void myCasesAction() {
-    Navigator.pop(context);
+    Navigator.push(context, MaterialPageRoute(builder: (context) {
+      return MyCases();
+    }));
   }
 
   void contactUsAction() {
-    Navigator.pop(context);
+    Navigator.push(context, MaterialPageRoute(builder: (context) {
+      return ContactUs();
+    }));
   }
 
   void helpSettingAction() {
-    Navigator.pop(context);
+    Navigator.push(context, MaterialPageRoute(builder: (context) {
+      return Setting();
+    }));
   }
 
   void logOutAction() {

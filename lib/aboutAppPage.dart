@@ -1,19 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Wellness extends StatefulWidget {
+class AboutApp extends StatefulWidget {
 
   @override
-  _WellnessState createState() => _WellnessState();
+  _AboutAppState createState() => _AboutAppState();
 }
 
-class _WellnessState extends State<Wellness> {
+class _AboutAppState extends State<AboutApp> {
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Wellness"),
+        title: Text("About App"),
       ),
     );
   }

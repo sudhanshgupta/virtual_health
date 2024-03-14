@@ -11,7 +11,10 @@ class _MedicalState extends State<Medical> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Medical"),
+      ),
+    );
   }
 }

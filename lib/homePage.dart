@@ -102,9 +102,9 @@ class _HomeState extends State<Home> {
             ),
             ElevatedButton(
               onPressed: () {
-                myCasesAction();
+                contactUsAction();
               },
-              child: Text('My Cases'),
+              child: Text('Contact Us'),
             ),
           ],
         ),
